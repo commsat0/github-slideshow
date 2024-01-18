@@ -1,0 +1,37 @@
+console.log('*Monthly Budget Calculator*');
+monthlySavingsGoal = 2000
+console.log(`Monthly Savings Goal = ${
+monthlySavingsGoal
+}`);
+console.log('Income');
+console.log('Job: 3500')
+let Job = 3500
+console.log('Other: 100')
+let Other = 100
+console.log('Expenses');
+console.log('Rent: 2000')
+let Rent = 2000
+console.log('Wifi: 50')
+let Wifi = 50
+console.log('Phone: 50')
+let Phones = 50
+console.log('Electricity: 30')
+let Electricity = 30
+console.log('Groceries: 150')
+let Groceries = 150
+const Income = Job + Other
+const Expenses = Rent + Wifi + Phones + Electricity + 
+Groceries
+ 
+const total = Income - Expenses
+console.log(`Leftover = ${total}`);
+if(total < monthlySavingsGoal) {
+  console.log(`Your expenses exceed your budget by ${
+monthlySavingsGoal
+ - total}.`);
+}
+if (total > monthlySavingsGoal) {
+  console.log(`Savings goal achieved + ${total - 
+monthlySavingsGoal
+}`)
+}
